@@ -1,0 +1,458 @@
+:root {
+    --mainColor: #320E49;
+    --premierColor: #F57320;
+    --secondColor: #F3F0F5;
+    --ThirdColor: #0095CC;  
+    --fourColor: #231F20;  
+    --fiveColor: #EC2F64;  
+    --fontFamily1: "Arial";
+  }
+  
+*{
+    margin : 0 ;
+    padding :0;
+}
+body{
+    font-family: var(--fontFamily1) ;
+
+}
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--fourColor);
+    color: var(--secondColor);
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: var(--secondColor);
+    padding: 1rem;
+}
+
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+.main{
+    width: 100%;  
+    
+}
+
+.icon{
+    cursor: pointer; 
+}
+
+
+.logo{
+    color: var(--fiveColor);
+    font-size: 30px;
+}
+.logo span{
+    color: var(--ThirdColor);
+}
+.logo > span:first-child {
+    color: var(--premierColor);
+   }
+.navbar {
+    flex: 1;
+    text-align: right;
+
+}
+
+.navbar  ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.navbar  ul li a{
+    text-decoration: none;
+    color: var(--secondColor);
+    font-family: var(--fontFamily1);
+    font-size: 20px;
+    
+}
+.navbar  ul li a:hover{
+    color: var(--premierColor);
+    
+}
+.current-page{
+    /* : var(--ThirdColor); */
+    background-color: var(--mainColor);
+    
+}
+
+.contact{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(/image/pexels-andrea-piacquadio-787476.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+   
+    
+}
+.contact h1{
+    text-align: center;
+    color: var(--secondColor);
+    
+}
+.contact .send-message{
+    height:500px;
+   
+    
+}
+
+.send-message input{
+    flex-direction: column;
+    font-size: 19px;
+    display: flex;
+
+    /* border: none; */
+    width: 70%;
+    height: 45px;
+    outline: none   ;
+    border-bottom: rgb(0, 0, 0);
+    background-color:var(--secondColor); 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 8px;
+    
+}
+.send-message textarea{
+    flex-direction: column;
+    font-size: 19px;
+    display: flex;
+    padding: 8px;
+    /* border: none; */
+    width: 70%;
+    outline: none   ;
+    border-bottom: rgb(0, 0, 0);
+    background-color: var(--secondColor); 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.send-message button{
+    flex-direction: column;
+    font-size: 19px;
+    display: flex;
+    /* border: none; */
+    background-color: var(--fourColor);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 20px ;
+    color: var(--secondColor) ;
+    border-radius: 10px;
+    
+}
+
+.style-contact{
+    background-color: var(--mainColor);
+    width: 79.5%;
+    margin-right: auto;
+    margin-left:auto ;
+    padding-top: 70px;
+    border-radius: 0 0 10px 10px;
+}
+#write-message{
+    display: flex;
+}
+footer{
+    background-color: var(--fourColor);
+    
+}
+
+.footer{
+    display: flex;
+    text-align: center;
+    padding-top: 50px;
+}
+.company{
+    color: var(--secondColor);
+}
+.company  ul li {
+    list-style: none;
+    margin-top: 8px;
+
+}
+.company ul li a{
+    text-decoration: none;
+    color:var(--secondColor);
+    font-size: 18px;
+
+
+}
+.spacing{
+    margin-left: 15%;
+}
+.country h1{
+    color:var(--secondColor);
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.privacy{
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 30px;
+}
+.privacy ul li  {
+    display: inline-block;
+    list-style: none;
+    margin-left: 5%;
+
+}
+.country-currency{
+    padding-left: 25%;
+}
+
+.privacy ul li a{
+    text-decoration: none;
+    color: gray;
+    font-size: 10px;
+
+}
+.country select{
+    padding: 6px 10px 6px 10px ;
+    background-color: var(--mainColor);
+    border: 2px solid var(--secondColor);
+    border-radius:4px ;
+    color: var(--secondColor);
+    margin-bottom: 20px;
+}
+.country select option{
+    padding: 7px 10px 7px 10px ;
+    font-size :  14px;
+    background-color: white !important;
+    color: var(--fourColor) !important;
+    
+}
+.regroup-items{
+    display: flex;
+}
+
+@media (max-width: 800px) {
+  
+    .navbar {
+        width: 100%;
+
+
+    }
+
+    .navbar ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        text-align: center;
+    }
+
+    .navbar ul li a {
+        padding: .5rem 1rem;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+    .contact h1{
+        text-align: center;
+        color: var(--secondColor);
+        
+    }
+    .contact .send-message{
+        height:440px;
+       
+        
+    }
+    
+    .send-message input{
+        flex-direction: column;
+        font-size: 15px;
+        display: flex;
+        /* border: none; */
+        width: 70%;
+        height: 40px;
+        outline: none   ;
+        border-bottom: rgb(0, 0, 0);
+        background-color:var(--secondColor); 
+        margin-top: 15px;
+        border-radius: 8px;
+        padding: 5px;
+        
+    }
+    .send-message textarea{
+        flex-direction: column;
+        font-size: 15px;
+        display: flex;
+        padding: 8px;
+        /* border: none; */
+        width: 70%;
+        outline: none   ;
+        border-bottom: rgb(0, 0, 0);
+        background-color: var(--secondColor); 
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        border-radius: 10px;
+    }
+    .send-message button{
+        flex-direction: column;
+        font-size: 14px;
+        display: flex;
+        /* border: none; */
+        background-color: var(--fourColor);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        padding: 14px ;
+        color: var(--secondColor) ;
+        border-radius: 10px;
+        
+    }
+    
+    .style-contact{
+        background-color: var(--mainColor);
+        width: 79.5%;
+        margin-right: auto;
+        margin-left:auto ;
+        padding-top: 70px;
+        border-radius: 0 0 10px 10px;
+    }
+    #write-message{
+        display: flex;
+    }
+    footer{
+        background-color: var(--fourColor);
+    }
+
+    .footer{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 50px;
+    }
+    .company{
+        color: var(--secondColor);
+    }
+    .company  ul li {
+        list-style: none;
+        margin-top: 8px;
+
+    }
+    .company ul li a{
+        text-decoration: none;
+        color:var(--secondColor);
+        font-size: 12px;
+
+
+    }
+    .country h1{
+        color:var(--secondColor);
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+    .privacy{
+        text-align: center;
+        margin-top: 40px;
+        padding-bottom: 30px;
+    }
+    .privacy ul li  {
+        display: inline-block;
+        list-style: none;
+        margin-left: 5%;
+    
+    }
+    
+    .privacy ul li a{
+        text-decoration: none;
+        color: gray;
+        font-size: 10px;
+    
+    }
+    .country select{
+        padding: 6px 10px 6px 10px ;
+        background-color: var(--mainColor);
+        border: 2px solid var(--secondColor);
+        border-radius:4px ;
+        color: var(--secondColor);
+        margin-bottom: 20px;
+    }
+    .country select option{
+        padding: 7px 10px 7px 10px ;
+        font-size :  14px;
+        background-color: white !important;
+        color: var(--fourColor) !important;
+        
+    }
+    
+}

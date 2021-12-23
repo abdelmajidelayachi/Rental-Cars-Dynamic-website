@@ -1,0 +1,474 @@
+:root {
+    --mainColor: #320E49;
+    --premierColor: #F57320;
+    --secondColor: #F3F0F5;
+    --ThirdColor: #0095CC;  
+    --fourColor: #231F20;  
+    --fiveColor: #EC2F64;  
+    --fontFamily1: "Arial";
+  }
+  
+*{
+    margin : 0 ;
+    padding :0;
+}
+body{
+    font-family: var(--fontFamily1) ;
+    background-color: var(--mainColor);
+
+}
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--fourColor);
+    color: var(--secondColor);
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: var(--secondColor);
+    padding: 1rem;
+}
+
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+.main{
+    width: 100%;  
+    
+}
+
+.icon{
+    cursor: pointer; 
+}
+
+
+.logo{
+    color: var(--fiveColor);
+    font-size: 30px;
+}
+.logo span{
+    color: var(--ThirdColor);
+}
+.logo > span:first-child {
+    color: var(--premierColor);
+   }
+.navbar {
+    flex: 1;
+    text-align: right;
+
+}
+
+.navbar  ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+.navbar  ul li a{
+    text-decoration: none;
+    color: var(--secondColor);
+    font-family: var(--fontFamily1);
+    font-size: 20px;
+    
+}
+.navbar  ul li a:hover{
+    color: var(--premierColor);
+    
+}
+.current-page{
+    /* : var(--ThirdColor); */
+    background-color: var(--mainColor);
+    
+}
+
+main {    
+    background-image: url('/image/head-background.png');
+    background-size: 100% 800px ;
+    background-repeat: no-repeat ;
+    width: 100%;
+    height: 600px;
+    position: absolute;
+}
+.search-cars{
+    margin-left: 90px;
+    margin-top: 50px ;
+    position: absolute;
+    background-color: var(--secondColor);
+    padding : 30px;
+    border-radius: 10px;
+}
+
+.date{
+    margin-top: 20px;
+    display: flex;
+    margin-left: 0px;
+}
+
+#drop-off{
+    margin-left: 16px ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--secondColor);
+    border: var(--secondColor);
+}
+#btn-search{
+  
+    text-align: center;
+    margin-top: 20px;
+    
+}
+#btn-search button{
+    background: rgb(50,14,73);
+background: linear-gradient(90deg, rgba(50,14,73,1) 0%, rgba(136,58,55,1) 10%, rgba(245,115,32,1) 100%, rgba(0,212,255,1) 100%);
+    padding: 10px 40px 10px 40px;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+}
+#city{
+    padding: 3px 90px 3px 40px;
+    font-size: 20px;
+    align-items: center;
+}
+.car-icon-style{
+    display: flex;
+    background-color: white;
+    padding: 0;
+    border: none;
+}
+.car-icon-style span img{
+    width: 34px;
+    padding-left: 4px;
+    float: left;
+}
+.car-icon-style span input{
+   border: none;
+   margin: 0 0 0px 5px;
+   width: 80%;
+   padding-left: 5px !important;
+   border-left: 2px solid var(--fourColor);
+
+}
+input:focus, select:focus{
+    outline: none;
+}
+.car-icon-style span{
+    display: flex;
+}
+.time-date span input{
+    border: none;
+    width: 70%;
+}
+.time-date{
+    width: 40%;
+    margin-top: 20px;
+    background-color: white;
+    margin-left: 5%;
+    padding-left: 10px;
+    padding-right: 15px;
+   
+}
+
+.time-date span button{
+    padding: 5px 10px 5px 10px;
+    background-color: white;
+    border: none;
+    border-left: 2px solid var(--fourColor);
+}
+.op1{
+    margin-left: 5% ;
+    display: flex;
+    background-color: var(--secondColor);
+    padding: 2%;
+    margin-right: 5%;
+    border-radius: 5px;
+    margin-bottom: 20PX ;
+}
+
+.op1 div img{
+    background-color: var(--ThirdColor); 
+    padding: 10px;
+    width: 40px;
+    border-radius: 15px;
+}
+.op1 div p{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.service-text{
+     margin-left: 4%;
+
+}
+.show-sign-icon{
+    margin-left: 47%;
+}
+.show-sign-icon img{
+    background-color: var(--secondColor) !important;
+    
+}
+.trading-destination{
+   background-color: var(--secondColor);
+    margin: 20px 70px 10px 70px;
+    border-radius: 5px;
+}
+.trading-destination h1{
+    padding: 20px 20px 30px 40px;
+}
+.dist1{ 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    padding: 50px 120px 0px 30px  !important;
+    display: flex; 
+   
+}
+.dist2{ 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    padding: 50px 72px 0px 30px  !important;
+    display: flex; 
+   
+}
+.dist1 div img{
+    width: 80%;
+    height: auto;
+    
+}
+.dist-city{
+    padding: 1px 1px 10px 0;
+    margin-right: 100px;
+}
+
+.dist-city h1 {
+    
+    padding: 1px;
+}
+
+.city-resize{
+    width: 190px !important;
+    height: 150px !important;
+}
+
+.flag img{
+    width: 30px !important;
+}
+.distination1{
+    display: flex;
+    justify-content: space-around;
+}
+footer{
+    background-color: var(--fourColor);
+    display: block;
+    position: absolute;
+    float: bottom !important;
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 80px ;
+}
+
+    
+
+.footer-align{
+    display: flex;
+    margin-left: 5%;
+    margin-bottom: 80px ;
+  
+
+}
+.footer-align div{
+    margin-left: 10%;
+    margin-left: 50px ;
+}
+
+
+.list1 div{
+    color: var(--secondColor);
+    margin-top: 20px;
+    font-size:15px ;
+}
+.list-links ul li a{
+    text-decoration: none;
+    color: var(--secondColor);
+    font-family: var(--fontFamily1);
+    font-size: 14px;
+
+}
+.list-links ul li{
+    list-style: none;
+    margin-top: 10px;
+}
+.about-menu-footer{
+    margin-top: 80px ;
+    display: flex;
+}
+.choose-country{
+  margin-left: 10%;
+}
+.country-select{
+    margin-top: 20px;
+}
+
+.choose-country div h1{
+    font-size: 16px;
+    color: var(--secondColor)
+
+}
+.country-select select{
+    padding: 10px 20px 10px 20px ;
+    background-color: var(--mainColor);
+    border: 2px solid var(--secondColor);
+    border-radius:4px ;
+    color: var(--secondColor);
+}
+.country-select select option{
+    padding: 10px 20px 10px 20px ;
+    font-size :  20px;
+    background-color: white !important;
+    color: var(--fourColor) !important;
+}
+.currency select option{
+    padding: 10px 20px 10px 20px ;
+    font-size :  20px;
+    background-color: white !important;
+    color: var(--fourColor) !important;
+}
+.currency select{
+    margin-top: 20px;
+    padding: 10px 20px 10px 20px ;
+    background-color: var(--mainColor);
+    border: 2px solid var(--secondColor);
+    border-radius:4px ;
+    color: var(--secondColor);
+}
+.privacy{
+    text-align: center;
+}
+.privacy ul li  {
+    display: inline-block;
+    list-style: none;
+    margin-left: 5%;
+
+}
+
+
+.privacy ul li a{
+    text-decoration: none;
+    color: gray;
+
+}
+
+@media (max-width: 800px) {
+  
+    .navbar {
+        width: 100%;
+
+
+    }
+
+    .navbar ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        text-align: center;
+    }
+
+    .navbar ul li a {
+        padding: .5rem 1rem;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+    .search-cars{
+        margin-left: 60px;
+        width: 50%;
+        margin-top: 50px ;
+        position: absolute;
+        background-color: var(--secondColor);
+        padding : 6px;
+        border-radius: 10px;
+    }
+    
+    .trading-destination{
+        background-color: var(--secondColor);
+         margin: 20px 70px 10px 70px;
+         border-radius: 5px;
+     }
+     .trading-destination h1{
+         padding: 20px 20px 30px 40px;
+     }
+     .distination1{
+        display: block;
+        justify-content: space-around;
+    }
+    
+    .date div{
+        display: block !important;
+    }
+    
+}
