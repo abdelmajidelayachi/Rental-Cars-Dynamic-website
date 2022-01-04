@@ -1,5 +1,5 @@
 :root {
-    --mainColor: #320E49;
+    --mainColor: #EFFCFF;
     --premierColor: #F57320;
     --secondColor: #F3F0F5;
     --ThirdColor: #0095CC;  
@@ -11,10 +11,13 @@
 *{
     margin : 0 ;
     padding :0;
+    letter-spacing: 2px
 }
+
 body{
     font-family: var(--fontFamily1) ;
-    background-color: var(--mainColor);
+    letter-spacing: 2px;
+    /* position : relative; */
 
 }
 .navbar {
@@ -101,6 +104,7 @@ body{
     display: inline-block;
     margin-right: 30px;
 }
+
 .navbar  ul li a{
     text-decoration: none;
     color: var(--secondColor);
@@ -114,8 +118,7 @@ body{
 }
 .current-page{
     /* : var(--ThirdColor); */
-    background-color: var(--mainColor);
-    
+    border-bottom: 4px solid var(--premierColor);   
 }
 
 main {    
@@ -126,11 +129,18 @@ main {
     height: 600px;
     position: absolute;
 }
+.image-h img{
+    width: 100%;
+    position: relative;
+}
+
 .search-cars{
-    margin-left: 90px;
-    margin-top: 50px ;
+    z-index: 27777777;
     position: absolute;
-    background-color: var(--secondColor);
+    top:200px;
+    left:100px;
+    width: 50%;
+    background-color: #baa7c785;
     padding : 30px;
     border-radius: 10px;
 }
@@ -139,6 +149,13 @@ main {
     margin-top: 20px;
     display: flex;
     margin-left: 0px;
+}
+.time-date{
+    border-radius: 5px;
+}
+.time-date span input{
+    padding: 5px;
+    font-size: 16px;
 }
 
 #drop-off{
@@ -149,14 +166,12 @@ main {
     border: var(--secondColor);
 }
 #btn-search{
-  
     text-align: center;
     margin-top: 20px;
     
 }
 #btn-search button{
-    background: rgb(50,14,73);
-background: linear-gradient(90deg, rgba(50,14,73,1) 0%, rgba(136,58,55,1) 10%, rgba(245,115,32,1) 100%, rgba(0,212,255,1) 100%);
+background-color: var(--premierColor);
     padding: 10px 40px 10px 40px;
     font-size: 24px;
     border: none;
@@ -194,7 +209,7 @@ input:focus, select:focus{
 }
 .time-date span input{
     border: none;
-    width: 70%;
+    width: 100%;
 }
 .time-date{
     width: 40%;
@@ -239,161 +254,114 @@ input:focus, select:focus{
 }
 .show-sign-icon{
     margin-left: 47%;
-}
-.show-sign-icon img{
     background-color: var(--secondColor) !important;
     
 }
-.trading-destination{
-   background-color: var(--secondColor);
-    margin: 20px 70px 10px 70px;
-    border-radius: 5px;
-}
-.trading-destination h1{
-    padding: 20px 20px 30px 40px;
-}
-.dist1{ 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: center;
-    padding: 50px 120px 0px 30px  !important;
-    display: flex; 
-   
-}
-.dist2{ 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: center;
-    padding: 50px 72px 0px 30px  !important;
-    display: flex; 
-   
-}
-.dist1 div img{
-    width: 80%;
-    height: auto;
-    
-}
-.dist-city{
-    padding: 1px 1px 10px 0;
-    margin-right: 100px;
-}
 
-.dist-city h1 {
-    
-    padding: 1px;
-}
-
-.city-resize{
-    width: 190px !important;
-    height: 150px !important;
-}
-
-.flag img{
-    width: 30px !important;
-}
-.distination1{
-    display: flex;
-    justify-content: space-around;
-}
-footer{
+.footer-container{
     background-color: var(--fourColor);
-    display: block;
-    position: absolute;
-    float: bottom !important;
+    padding: 2rem 0 ;
+
+}
+.footer{
     width: 100%;
-    margin-top: 80px;
-    margin-bottom: 80px ;
-}
-
-    
-
-.footer-align{
-    display: flex;
-    margin-left: 5%;
-    margin-bottom: 80px ;
-  
-
-}
-.footer-align div{
-    margin-left: 10%;
-    margin-left: 50px ;
-}
-
-
-.list1 div{
+    background-color: var(--fourColor);
     color: var(--secondColor);
-    margin-top: 20px;
-    font-size:15px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
 }
-.list-links ul li a{
+.footer-heading{
+    display: flex;
+    flex-direction: column;
+    margin-right: 8rem;
+
+}
+.footer-heading h2{
+    margin-bottom: 1.4rem;
+}
+.footer-heading a{
+    color: var(--secondColor);
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+.footer-heading a:hover{
+    color: var(--);
+    transition: 0.3s ease-out;
+}
+.footer-email-form h2{
+    margin-bottom: 1.4rem;
+}
+#footer-email{
+    width: 250px;
+    height: 40px;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    margin-bottom:2rem ;
+}
+#footer-email-btn{
+    width: 100px;
+    height: 40px;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: var(--premierColor);
+    color: var(--secondColor);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#footer-email::placeholder{
+    color: var(--mainColor);
+}
+#footer-email-btn:hover{
+    background-color: var(--ThirdColor);
+    color: var(--secondColor);
+    transition: all 0.4s ease-out;
+}
+.footer-email-form select {
+    display: flex;
+    width: 355px;
+    height: 40px;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: var(--premierColor);
+    color: var(--secondColor);
+    text-transform: uppercase;
+    margin-top: 2rem;
+    cursor: pointer;
+    padding-left: 1rem;
+}
+.footer-email-form select option{
+    color: var(--fourColor);
+    background-color: var(--secondColor);
+}
+.footer-email-form select:hover{
+    color: var(--secondColor);
+    background-color: var(--ThirdColor);
+}
+.privacy a{
+    display: flex;
+    text-align: center;
     text-decoration: none;
     color: var(--secondColor);
-    font-family: var(--fontFamily1);
-    font-size: 14px;
 
-}
-.list-links ul li{
-    list-style: none;
-    margin-top: 10px;
-}
-.about-menu-footer{
-    margin-top: 80px ;
-    display: flex;
-}
-.choose-country{
-  margin-left: 10%;
-}
-.country-select{
-    margin-top: 20px;
-}
-
-.choose-country div h1{
-    font-size: 16px;
-    color: var(--secondColor)
-
-}
-.country-select select{
-    padding: 10px 20px 10px 20px ;
-    background-color: var(--mainColor);
-    border: 2px solid var(--secondColor);
-    border-radius:4px ;
-    color: var(--secondColor);
-}
-.country-select select option{
-    padding: 10px 20px 10px 20px ;
-    font-size :  20px;
-    background-color: white !important;
-    color: var(--fourColor) !important;
-}
-.currency select option{
-    padding: 10px 20px 10px 20px ;
-    font-size :  20px;
-    background-color: white !important;
-    color: var(--fourColor) !important;
-}
-.currency select{
-    margin-top: 20px;
-    padding: 10px 20px 10px 20px ;
-    background-color: var(--mainColor);
-    border: 2px solid var(--secondColor);
-    border-radius:4px ;
-    color: var(--secondColor);
 }
 .privacy{
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 80%;
+    margin: 40px auto;
+    justify-content: space-around;
+    font-size: 14px ;
 }
-.privacy ul li  {
-    display: inline-block;
-    list-style: none;
-    margin-left: 5%;
-
-}
-
-
-.privacy ul li a{
-    text-decoration: none;
-    color: gray;
-
-}
-
 @media (max-width: 800px) {
   
     .navbar {
@@ -444,31 +412,75 @@ footer{
     .navbar-links.active {
         display: flex;
     }
+    main {    
+        background-image: url('/image/head-background.png');
+        background-size: 100% 400px ;
+        background-repeat: no-repeat ;
+        width: 100%;
+        height: 700px;
+        position: absolute;
+    }
     .search-cars{
-        margin-left: 60px;
-        width: 50%;
+        top:20px;
+        left:0;
+        
+        width: 90%;
         margin-top: 50px ;
         position: absolute;
-        background-color: var(--secondColor);
+        background-color: #baa7c785;
         padding : 6px;
         border-radius: 10px;
     }
-    
-    .trading-destination{
-        background-color: var(--secondColor);
-         margin: 20px 70px 10px 70px;
-         border-radius: 5px;
-     }
-     .trading-destination h1{
-         padding: 20px 20px 30px 40px;
-     }
-     .distination1{
+    .text-search-cars p{
+        font-size: 15px !important;
+    }
+    .text-search-cars h1{
+        font-size: 26px !important;
+    }
+    #btn-search{
+        width:100%;
+        margin-bottom: 20px;
+    }
+    .car-icon-style{
+        width: 80%;
+        margin-left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+    }
+
+    #btn-search button{
+        background-color: var(--premierColor);
+            padding: 5px 20px 5px 20px;
+            width: 80%;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+        }
+    .date{
+        margin-top: 20px;
         display: block;
-        justify-content: space-around;
+        margin-left: 0px;
+        width:100%;
     }
     
     .date div{
         display: block !important;
+        width:80%;
     }
+    .footer-email-form{
+        display: none;  
+    }
+    .footer{
+        width: 100%;
+        height: 700PX;
+        background-color: var(--fourColor);
+        color: var(--secondColor);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
     
 }

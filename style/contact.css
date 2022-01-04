@@ -1,5 +1,5 @@
 :root {
-    --mainColor: #320E49;
+    --mainColor: #0095CC;
     --premierColor: #F57320;
     --secondColor: #F3F0F5;
     --ThirdColor: #0095CC;  
@@ -114,7 +114,7 @@ body{
 }
 .current-page{
     /* : var(--ThirdColor); */
-    background-color: var(--mainColor);
+    border-bottom: 4px solid var(--premierColor);
     
 }
 
@@ -198,79 +198,119 @@ body{
 #write-message{
     display: flex;
 }
-footer{
+
+.footer-container{
     background-color: var(--fourColor);
-    
+    padding: 2rem 0 ;
+    letter-spacing: 2px;
+
 }
 
 .footer{
+    width: 80%;
+    height: 500px;
+    background-color: var(--fourColor);
+    color: var(--secondColor);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.footer-heading{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+.footer-heading h2{
+    margin-bottom: 1.4rem;
+}
+.footer-heading a{
+    color: var(--secondColor);
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+.footer-heading a:hover{
+    color: var(--premierColor);
+    transition: 0.3s ease-out;
+}
+.footer-email-form h2{
+    margin-bottom: 1.4rem;
+}
+#footer-email{
+    width: 250px;
+    height: 40px;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    margin-bottom:2rem ;
+}
+#footer-email-btn{
+    width: 100px;
+    height: 40px;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: var(--premierColor);
+    color: var(--secondColor);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#footer-email::placeholder{
+    color: var(--mainColor);
+}
+#footer-email-btn:hover{
+    background-color: var(--mainColor);
+    color: var(--secondColor);
+    transition: all 0.4s ease-out;
+}
+.footer-email-form select {
+    display: flex;
+    width: 355px;
+    height: 40px;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: var(--premierColor);
+    color: var(--secondColor);
+    text-transform: uppercase;
+    margin-top: 2rem;
+    cursor: pointer;
+    padding-left: 1rem;
+}
+.footer-email-form select option{
+    color: var(--fourColor);
+    background-color: var(--secondColor);
+}
+.footer-email-form select:hover{
+    color: var(--secondColor);
+    background-color: var(--mainColor);
+}
+.privacy a{
     display: flex;
     text-align: center;
-    padding-top: 50px;
-}
-.company{
-    color: var(--secondColor);
-}
-.company  ul li {
-    list-style: none;
-    margin-top: 8px;
-
-}
-.company ul li a{
     text-decoration: none;
-    color:var(--secondColor);
-    font-size: 18px;
-
-
-}
-.spacing{
-    margin-left: 15%;
-}
-.country h1{
-    color:var(--secondColor);
-    font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    color: var(--secondColor);
 
 }
 .privacy{
-    text-align: center;
-    margin-top: 40px;
-    padding-bottom: 30px;
-}
-.privacy ul li  {
-    display: inline-block;
-    list-style: none;
-    margin-left: 5%;
-
-}
-.country-currency{
-    padding-left: 25%;
-}
-
-.privacy ul li a{
-    text-decoration: none;
-    color: gray;
-    font-size: 10px;
-
-}
-.country select{
-    padding: 6px 10px 6px 10px ;
-    background-color: var(--mainColor);
-    border: 2px solid var(--secondColor);
-    border-radius:4px ;
-    color: var(--secondColor);
-    margin-bottom: 20px;
-}
-.country select option{
-    padding: 7px 10px 7px 10px ;
-    font-size :  14px;
-    background-color: white !important;
-    color: var(--fourColor) !important;
-    
-}
-.regroup-items{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-around;
+    font-size: 14px ;
+}
+@media screen and (max-width: 1100px){
+    .footer{
+        height:700px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -453,6 +493,22 @@ footer{
         background-color: white !important;
         color: var(--fourColor) !important;
         
+        }
+    .footer{
+        height:750px; 
     }
-    
+
+    .footer-email-form{
+        display: none;  
+    }
+
 }
+@media screen and (max-width:667px){
+.footer{
+    display: block !important;
+}
+.footer-email-form{
+    display: none;  
+}
+}
+
