@@ -11,22 +11,21 @@
     <header>
         <!-- bar menu -->
         <nav class="navbar">
-            <div class="brand-title"><a style="text-decoration: none;" href="index.html"><h2 class="logo">Rent<span>Me</span><span>Now</span> </h2></a></div>
+            <div class="brand-title"><a style="text-decoration: none;" href="index.html"><h2 class="logo"><span>Rent</span><span>Now</span> </h2></a></div>
             <a href="#" class="toggle-button">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </a>
             <div class="navbar-links">
-              <ul>
-                    <li ><a href="index.html">Accueil</a></li>
-                    <li><a href="#">Gallerie</a></li>
-                    <li><a href="#">Réservation</a></li>
+                <ul>
+                    <li ><a href="index.html">Home</a></li>
+                    <li><a href="gallerie.html">Gallery</a></li>
+                    <li><a href="reserving.html">Booking</a></li>
                     <li class="current-page"><a href="#">Contact</a></li>
-                    <li><a href="#">Sign In</a></li>
-              </ul>
+                </ul>
             </div>
-          </nav>
+        </nav>
     </header>
     <main>
         <div class="contact">
@@ -37,93 +36,90 @@
                     <input type="email" id="email" name="placeCars" placeholder="Email Adresse">
                     <input type="tel" id="number" name="placeCars" placeholder="number">
                     <textarea name="message"  placeholder="Write message" id="text-area" cols="30" rows="6"></textarea>
-                    <button>SEND MESSAGE</button>
+                    <button onclick="messageSaved()">SEND MESSAGE</button>
                 </div>
             </div>
-        </div>
+        </div> 
+        
+        
+
     </main>
     <footer>
-        <div class="footer">
-            <div class="company spacing">
-                <h1 style="font-size: 16px;">Company <br></h1>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Mobile</a></li>
-                    <li><a href="#">Discover</a></li>
-                    <li><a href="#">How we work</a></li>
-                    <li><a href="#">Why travelers choose <br> RentMeNow</a></li>
-                    <li><a href="#">Sustainability</a></li>
-                </ul>
-            </div>
-            <div class="regroup-items spacing">
-                <div class="contact-more">
-                    <div class="company">
-                        <div><h1  style="font-size: 16px;">Contact <br></h1>
-                        </div>
-                        <ul>
-                            <li><a href="#">Help/FAQ</a></li>
-                            <li><a href="#">Press</a></li>
-                            <li><a href="#">Advertise with us</a></li>
-                        </ul>
-                    </div>
-                    <div class="company spacing">
-                        <h1 style="font-size: 16px;"><br>More <br></h1>
-                        <ul>
-                            <li><a href="#">Airline fees</a></li>
-                            <li><a href="#">Airlines</a></li>
-                        </ul>
-                    </div>
+        <div class="footer-container">
+            <div class="footer">
+                <div class="footer-heading footer-1">
+                    <h2>Company</h2>
+                    <a href="#">Careers</a>         
+                    <a href="#">About</a>           
+                    <a href="#">Mobile</a>          
+                    <a href="#">Discover</a>        
+                    <a href="#">How we work</a>     
+                    <a href="#">Why choose RentMeNow</a>
+                    <a href="#">Sustainability</a>  
                 </div>
-                <div class="country-currency spacing">
-                    <div class="country">
-                        <h1 >Site / Currency </h1>
-                        <select>
-                            <option value="  " selected>Select a country</option>
-                            <option value="MA">Maroc</option>
-                            <option value="DZ">Algeria</option>
-                            <option value="AD">Andorra</option>
-                            <option value="AO">Angola</option>
-                            <option value="AI">Anguilla</option>
-                            <option value="AQ">Antarctica</option>
-                            <option value="AG">Antigua and Barbuda</option>
-                            <option value="AR">Argentina</option>
-                            <option value="AM">Armenia</option>
-                            <option value="AW">Aruba</option>
-                            <option value="AU">Australia</option>
-                            <option value="AT">Austria</option>
-                            <option value="AZ">Azerbaijan</option>
-                            <option value="BS">Bahamas</option>
-                            <option value="BH">Bahrain</option>
-                            <option value="BD">Bangladesh</option>
-                            <option value="BB">Barbados</option>
-                            <option value="BY">Belarus</option>
-                            <option value="BE">Belgium</option>
-                            <option value="BZ">Belize</option>
-                            <option value="BJ">Benin</option>
-                            <option value="BM">Bermuda</option>
-                        </select>
-                    </div>
-                    <div class="country">
-                        <select>
-                            <option value="MA"><span><b><i>DH</i></b></span>  Moroccan Dirham</option>
-                            <option value="US"><span>$</span> Dollars US</option>
-                            <option value="Euro"><span>£</span> Euro</option>
-                        </select>
-                    </div>
+                <di class="footer-heading footer-2">
+                    <h2>Contact</h2>
+                    <a href="#">Help/FAQ</a>         
+                    <a href="#">Press</a>           
+                    <a href="#">Advertise with us</a>      
+                    <h2><br> More</h2>
+                    <a href="#">Online payment</a>         
+                    <a href="#">Airlines</a> 
+                </di>
+                <div class="footer-email-form">
+                    <h2>Sign Up</h2>
+                    <input type="email" name="email-footer" placeholder="Enter your email address" id="footer-email">
+                    <input type="submit" value="submit" id="footer-email-btn">
+                    <h2 >Site / Currency </h2>
+                    <select>
+                        <option value="  " selected>Select a country</option>
+                        <option value="MA">Maroc</option>
+                        <option value="DZ">Algeria</option>
+                        <option value="AD">Andorra</option>
+                        <option value="AO">Angola</option>
+                        <option value="AI">Anguilla</option>
+                        <option value="AQ">Antarctica</option>
+                        <option value="AG">Antigua and Barbuda</option>
+                        <option value="AR">Argentina</option>
+                        <option value="AM">Armenia</option>
+                        <option value="AW">Aruba</option>
+                        <option value="AU">Australia</option>
+                        <option value="AT">Austria</option>
+                        <option value="AZ">Azerbaijan</option>
+                        <option value="BS">Bahamas</option>
+                        <option value="BH">Bahrain</option>
+                        <option value="BD">Bangladesh</option>
+                        <option value="BB">Barbados</option>
+                        <option value="BY">Belarus</option>
+                        <option value="BE">Belgium</option>
+                        <option value="BZ">Belize</option>
+                        <option value="BJ">Benin</option>
+                        <option value="BM">Bermuda</option>
+                    </select>   
+                    <select>
+                        <option value="MA"><span><b><i>DH</i></b></span>  Moroccan Dirham</option>
+                        <option value="US"><span>$</span> Dollars US</option>
+                        <option value="Euro"><span>£</span> Euro</option>
+                    </select>
                 </div>
             </div>
-        </div>
-        <div class="privacy">
-            <ul>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Ad Choices</a></li>
-                <li><a href="#">©2021 RentMeNow</a></li>
-            </ul>
-        </div>
-        
+            <div class="privacy">
+                <a href="#">Privacy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Ad Choices</a>
+                <a href="#">©2021 RentMeNow</a>
+            </div>
+        </div> 
     </footer>
-    <script src="/scripts/scripts.js"></script>
-</body>
-</html>
+    <!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="sweetalert2.all.min.js"></script>
+        <script>function messageSaved(){
+            
+            Swal.fire(
+                'Message successfully sent!',
+                'Press OK!'
+                );}</script> -->
+                
+            <script src="/scripts/contact.js"></script>
+            </body>
+            </html>

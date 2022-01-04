@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/reserving.css">
+  <script src="https://kit.fontawesome.com/7ab9e52e06.js" crossorigin="anonymous"></script>
+  <title>Reservation</title>
+</head>
+<body>
+  <header>
+    <!-- bar menu -->
+    <nav class="navbar">
+        <div class="brand-title"><a style="text-decoration: none;" href="#"><h2 class="logo"><span>Rent</span><span>Now</span> </h2></a></div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+                <li ><a href="#">Home</a></li>
+                <li><a href="gallerie.html">Gallery</a></li>
+                <li class="current-page"><a href="reserving.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+  </header>
+<!----main-->
+<div class="selector-item-container">
+  <img src="image/car-bg.jpg" alt="">
+  
+  <div class="selection"> 
+    <h2>Search for car rental </h2>
+    <div class="items-selectors country-selector">
+
+      <form name="search-filter" id="search-filter" >
+        <select name="auto-manual" id="auto-manual">
+          <option value="none" id="selected-auto" selected="selected">--Select diver--</option>
+        </select>
+        <select name="type-vehicle" id="type-vehicle">
+          <option value="" selected="selected">--select type--</option>
+        </select>
+        <select name="power" id="power" >
+          <option value="" selected="selected">--Select energy--</option>
+        </select>
+        <input type="text" name="days-nums" placeholder="days number?" value = "" id="days-nums">
+      </form>
+      <p class="style-output" >The price of this operation : <span><span id="price-cars">0</span>£</span></p>
+      <button id="show-price-btn" >Price</button>
+
+      </div>
+      <h2>Pickup location </h2>
+      <div class="country-selector items-selectors">
+        <form name="locationCountry" id="locationCountry" >
+          <select name="country" id="country">
+             <option value="" selected="selected">--Select country--</option>
+           </select>
+          <select name="city" id="city">
+             <option value="" selected="selected">--select city--</option>
+           </select>
+          <select name="locationPlace" id="locationPlace">
+             <option value="" selected="selected">Select place</option>
+           </select>
+         </form>
+        <button >Search car</button>
+      </div>
+    </div>
+  </div> 
+</div>
+
+  <!--footer--->
+  
+  <div class="footer-container">
+    <div class="footer">
+        <div class="footer-heading footer-1">
+            <h2>Company</h2>
+            <a href="#">Careers</a>         
+            <a href="#">About</a>           
+            <a href="#">Mobile</a>          
+            <a href="#">Discover</a>        
+            <a href="#">How we work</a>     
+            <a href="#">Why choose RentMeNow</a>
+            <a href="#">Sustainability</a>  
+        </div>
+        <di class="footer-heading footer-2">
+            <h2>Contact</h2>
+            <a href="#">Help/FAQ</a>         
+            <a href="#">Press</a>           
+            <a href="#">Advertise with us</a>      
+            <h2><br> More</h2>
+            <a href="#">Online payment</a>         
+            <a href="#">Airlines</a> 
+        </di>
+        <div class="footer-email-form">
+            <h2>Sign Up</h2>
+            <input type="email" name="email-footer" placeholder="Enter your email address" id="footer-email">
+            <input type="submit" value="submit" id="footer-email-btn">
+            <h2 >Site / Currency </h2>
+            <select>
+                <option value="  " selected>Select a country</option>
+                <option value="MA">Maroc</option>
+                <option value="DZ">Algeria</option>
+                <option value="AD">Andorra</option>
+                <option value="AO">Angola</option>
+                <option value="AI">Anguilla</option>
+                <option value="AQ">Antarctica</option>
+                <option value="AG">Antigua and Barbuda</option>
+                <option value="AR">Argentina</option>
+                <option value="AM">Armenia</option>
+                <option value="AW">Aruba</option>
+                <option value="AU">Australia</option>
+                <option value="AT">Austria</option>
+                <option value="AZ">Azerbaijan</option>
+                <option value="BS">Bahamas</option>
+                <option value="BH">Bahrain</option>
+                <option value="BD">Bangladesh</option>
+                <option value="BB">Barbados</option>
+                <option value="BY">Belarus</option>
+                <option value="BE">Belgium</option>
+                <option value="BZ">Belize</option>
+                <option value="BJ">Benin</option>
+                <option value="BM">Bermuda</option>
+            </select>   
+            <select>
+                <option value="MA"><span><b><i>DH</i></b></span>  Moroccan Dirham</option>
+                <option value="US"><span>$</span> Dollars US</option>
+                <option value="Euro"><span>$</span> Euro</option>
+            </select>
+        </div>
+    </div>
+    <div class="privacy">
+        <a href="#">Privacy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Ad Choices</a>
+        <a href="#">©2021 RentMeNow</a>
+    </div>
+</div>
+
+
+<script src="/scripts/reserving.js"></script>
+</body>
+</html>
