@@ -118,9 +118,9 @@ body{
 }
 .current-page{
     /* : var(--ThirdColor); */
-    border-bottom: 4px solid var(--premierColor);
-    
+    border-bottom: 4px solid var(--premierColor);    
 }
+
      /* style heading of the page */
   
    /* 2 */
@@ -130,7 +130,7 @@ body{
 	background: #2c3e50; /* darckblue */
 }
 .myslide{
-	height: 855px;
+	height: 700px   ;
 	display: none;
 	overflow: hidden;
 }
@@ -337,7 +337,6 @@ body{
    border-radius: 4px;
 }
 .text-item p:hover{
-    color: red;
     font-size: 16px;
     font-weight: 600;
 }
@@ -388,7 +387,7 @@ body{
 }
 .footer{
     width: 80%;
-    height: 500px;
+    height: 400px;
     background-color: var(--fourColor);
     color: var(--secondColor);
     display: flex;
@@ -440,7 +439,7 @@ body{
     cursor: pointer;
 }
 #footer-email::placeholder{
-    color: var(--mainColor);
+    color: var(--fourColor);
 }
 #footer-email-btn:hover{
     background-color: var(--ThirdColor);
@@ -536,6 +535,7 @@ body{
 
     .navbar-links ul li a {
         padding: .5rem 1rem;
+        font-size: 16px;
     }
 
     .navbar-links.active {
@@ -603,7 +603,6 @@ body{
        font-size: .8rem;
     }
     .text-item p:hover{
-        color: red;
         font-size: .8rem;
 
     }
@@ -635,25 +634,90 @@ body{
         height:750px; 
     }
 
-    .footer-email-form{
-        display: none;  
-    }
-
+    
 }
 @media screen and (max-width:667px){
+    .text-item h2{
+        font-size: 85%;
+    }
+    .categorie-container{
+        width: 100%;
+        height: 450px;
+        margin-bottom: 0px !important  ;
+     
+     }
+    .category-name{
+        background-color: var(--mainColor);
+        text-align: center;
+        color:var(--fourColor);
+        margin:  .5rem 0;
+        padding: .5rem;
+        font-size: 14px;
+    }
+    .logo span{
+        font-size: 16px;
+    }
+    .brand-title {
+
+        margin: 0.1rem;
+    }
+    .prev, .next{
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        font-size: 30px;
+        padding: 18px;
+        cursor: pointer;
+        color: var(--fourColor);
+        transition: 0.1s;
+        user-select: none;
+    }
     .footer{
         display: block !important;
+        font-size: 85%;
+        height: 600px;
     }
     .footer-email-form{
         display: none;  
+    }
+    .privacy a{
+        margin-top: 10px;
+    }
+    .footer-2{
+        margin-top: 20px;
+        white-space: nowrap;
+       
+    }
+    .toggle-button {
+        position: absolute;
+        top: .9rem;
+        right: 1rem;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 20px;
+        height: 12px;
+    }
+    
+    .toggle-button .bar {
+        height: 2.0px;
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
     }
 }
 
 
 
 @media screen and (max-width: 520px){
+
+    .footer{
+        display: block !important;
+        font-size: 85%;
+        height: 600px;
+    }
     .myslide{
 		height: 300px;
+        
 	}
     .txt h1{
 		font-size: 15px;
@@ -661,6 +725,26 @@ body{
 	.txt p{
 		font-size: 10px;
 	}
+    .footer-2{
+        margin-top: 20px;
+        white-space: nowrap;
+       
+    }
+    .txt{
+        font-size: 80%;
+        width: 80%;
+    }
+    .dot{
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+
+
 }
 
 

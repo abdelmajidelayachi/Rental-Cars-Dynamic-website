@@ -12,7 +12,7 @@
   <header>
     <!-- bar menu -->
     <nav class="navbar">
-        <div class="brand-title"><a style="text-decoration: none;" href="#"><h2 class="logo"><span>Rent</span><span>Now</span> </h2></a></div>
+        <div class="brand-title"><a style="text-decoration: none;" href="index.html"><h2 class="logo"><span>Rent</span><span>Now</span> </h2></a></div>
         <a href="#" class="toggle-button">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -20,7 +20,7 @@
         </a>
         <div class="navbar-links">
           <ul>
-                <li ><a href="#">Home</a></li>
+                <li ><a href="index.html">Home</a></li>
                 <li><a href="gallerie.html">Gallery</a></li>
                 <li class="current-page"><a href="reserving.html">Booking</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -38,7 +38,7 @@
 
       <form name="search-filter" id="search-filter" >
         <select name="auto-manual" id="auto-manual">
-          <option value="none" id="selected-auto" selected="selected">--Select diver--</option>
+          <option value="" id="selected-auto" selected="selected">--Select diver--</option>
         </select>
         <select name="type-vehicle" id="type-vehicle">
           <option value="" selected="selected">--select type--</option>
@@ -46,14 +46,14 @@
         <select name="power" id="power" >
           <option value="" selected="selected">--Select energy--</option>
         </select>
-        <input type="text" name="days-nums" placeholder="days number?" value = "" id="days-nums">
+        <input type="number" min="1" name="days-nums" placeholder="days number?" value = "" id="days-nums">
       </form>
       <p class="style-output" >The price of this operation : <span><span id="price-cars">0</span>£</span></p>
-      <button id="show-price-btn" >Price</button>
+      
 
       </div>
       <h2>Pickup location </h2>
-      <div class="country-selector items-selectors">
+      <div class="items-selectors country-selector">
         <form name="locationCountry" id="locationCountry" >
           <select name="country" id="country">
              <option value="" selected="selected">--Select country--</option>
@@ -64,8 +64,10 @@
           <select name="locationPlace" id="locationPlace">
              <option value="" selected="selected">Select place</option>
            </select>
+           <button id="show-price-btn" >Price</button>
          </form>
-        <button >Search car</button>
+        <!-- <button >Search car</button> -->
+       
       </div>
     </div>
   </div> 

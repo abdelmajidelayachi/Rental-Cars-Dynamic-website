@@ -126,10 +126,10 @@ var priceOfReserv = function priceOfReserv(type, typeVehicle, energy) {
   var price = 0;
 
   if (type == "Automatique" || type == "Manualle" || type == "Autre") {
-    if (typeVehicle == "moto" || typeVehicle == "Berline" || typeVehicle == "Camion" || typeVehicle == "Citadine" || typeVehicle == "Compact" || typeVehicle == "Utilitaire" || typeVehicle == "Engine") {
+    if (typeVehicle == "Motor" || typeVehicle == "Berline" || typeVehicle == "Camion" || typeVehicle == "Citadine" || typeVehicle == "Compact" || typeVehicle == "Utilitaire" || typeVehicle == "Engine") {
       if (energy == "Electrique" || energy == "Hybride" || energy == "Diesel" || energy == "Essence") {
         switch (typeVehicle) {
-          case "moto":
+          case "Motor":
             switch (energy) {
               case "Electrique":
                 price = 1.05 * 10;

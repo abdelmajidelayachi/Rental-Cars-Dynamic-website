@@ -208,7 +208,7 @@ body{
 
 .footer{
     width: 80%;
-    height: 500px;
+    
     background-color: var(--fourColor);
     color: var(--secondColor);
     display: flex;
@@ -302,19 +302,18 @@ body{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     justify-content: space-around;
-    font-size: 14px ;
+    font-size: 12px ;
 }
-@media screen and (max-width: 1100px){
-    .footer{
-        height:700px;
-    }
-}
+
 
 @media (max-width: 800px) {
   
+    .style-contact h1{
+        font-size: 20px;
+    }
     .navbar {
         width: 100%;
 
@@ -358,11 +357,14 @@ body{
 
     .navbar-links ul li a {
         padding: .5rem 1rem;
+        font-size: 16px;
     }
 
     .navbar-links.active {
         display: flex;
+        font-size: 10px !important;
     }
+    
     .contact h1{
         text-align: center;
         color: var(--secondColor);
@@ -389,6 +391,7 @@ body{
         padding: 5px;
         
     }
+    
     .send-message textarea{
         flex-direction: column;
         font-size: 15px;
@@ -433,11 +436,13 @@ body{
     footer{
         background-color: var(--fourColor);
     }
+    
 
     .footer{
         display: flex;
         justify-content: space-around;
         padding-top: 50px;
+        height: 350px !important;
     }
     .company{
         color: var(--secondColor);
@@ -463,13 +468,13 @@ body{
     }
     .privacy{
         text-align: center;
-        margin-top: 40px;
-        padding-bottom: 30px;
+        margin-top: 20px;
+        padding-bottom: 20px;
     }
     .privacy ul li  {
         display: inline-block;
         list-style: none;
-        margin-left: 5%;
+        margin-left:5%;
     
     }
     
@@ -495,20 +500,57 @@ body{
         
         }
     .footer{
-        height:750px; 
+        height:350px !important; 
     }
 
     .footer-email-form{
-        display: none;  
+
+        display: none;
+         
     }
 
 }
 @media screen and (max-width:667px){
+    .style-contact h1{
+        font-size: 16px;
+    }
 .footer{
+    font-size: 80%;
     display: block !important;
+    height:500px !important; 
 }
-.footer-email-form{
+.toggle-button {
+    position: absolute;
+    top: .9rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20px;
+    height: 12px;
+}
+
+.toggle-button .bar {
+    height: 2.0px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+.logo span{
+  font-size: 16px;
+}
+
+.brand-title {
+margin: 0rem 0.1rem 0.1rem 0.1rem;
+}
+}
+/* .footer-email-form{
     display: none;  
+} */
+.privacy a{
+    margin-left: 10px;
+    display: block;
+    margin-top: 8px;
+
 }
-}
+
 
