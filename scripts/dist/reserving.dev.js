@@ -256,6 +256,10 @@ var priceOfReserv = function priceOfReserv(type, typeVehicle, energy) {
 };
 
 var t = "'" + typeDi.value + "'";
-document.getElementById("show-price-btn").addEventListener("click", function () {
+document.getElementById("price-btn").addEventListener("click", function () {
   return priceOfReserv(typeDi.value, typeOfVehicleSel.value, energie);
 });
+
+function reset() {
+  location.reload();
+}

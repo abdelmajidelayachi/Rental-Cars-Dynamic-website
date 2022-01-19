@@ -239,7 +239,11 @@ window.onload = start();
 
 var t= "'"+typeDi.value +"'"
 
-document.getElementById("show-price-btn").addEventListener("click",()=>
+document.getElementById("price-btn").addEventListener("click",()=>
   priceOfReserv(typeDi.value,typeOfVehicleSel.value,energie)
 
 );
+
+function reset(){
+  location.reload();
+}

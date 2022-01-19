@@ -163,7 +163,7 @@ body{
 .selection h2{
   text-align: start;
   margin-bottom: 20px;
-  background-color: #f57220bb;
+  background-color: var(--premierColor);
   color: #EFFCFF;
   margin-top: 10px;
   border-radius:0 10px 10px 0;
@@ -195,6 +195,7 @@ body{
   border: none;
   margin-left: 6%;
   border-radius: 6px;
+  font-size: 16px !important;
  
 }
 .items-selectors  input{
@@ -211,6 +212,7 @@ body{
   border:none;
   font-size: 1.2rem;
   color:var(--secondColor);
+  margin-top: 20px;
   font-weight: 600;
 
 }
@@ -219,8 +221,9 @@ body{
   box-shadow :1px 2px;
 
 }
-
-
+.btn{
+  text-align: center;
+}
 .style-output{
   background-color: #fff;
   color: black;
@@ -529,7 +532,7 @@ body{
   border: none;
   margin-left: 6%;
   border-radius: 6px;
-  font-size: 12px;
+  font-size: 12px !important;
   
 }
 .selection button{
@@ -580,6 +583,15 @@ body{
 .image-desc img{
   width: 100%;
 }
+.btn{
+  width: 100%;
+  justify-content: space-evenly;
+}
+.btn button{
+  margin-right:0 ;
+  margin-left: 0;
+  font-size: 14px;
+}
 
 }
 @media screen and (max-width:667px){
@@ -616,6 +628,17 @@ body{
 .brand-title {
 margin: 0rem 0.1rem 0.1rem 0.1rem;
 }
+.btn button{
+  margin-right:0 ;
+  margin-left: 0;
+  font-size: 14px;
+}
+.btn button:hover{
+  margin-right:0 ;
+  margin-left: 0;
+  font-size: 14px;
+}
+
   
 }
 @media screen and (max-width:572px){
