@@ -125,7 +125,7 @@ body{
     background-position: center;
     background-size: cover;
     position: relative;
-   
+   padding-top: 50px;
     
 }
 .contact h1{
@@ -193,7 +193,7 @@ body{
     margin-right: auto;
     margin-left:auto ;
     padding-top: 70px;
-    border-radius: 0 0 10px 10px;
+    border-radius: 10px;
 }
 #write-message{
     display: flex;
